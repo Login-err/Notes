@@ -1,0 +1,24 @@
+```javascript
+//forEach()
+var a = [4,5,6];
+a.forEach(function(x,y,z){...});//a的长度多少就执行多少遍  不需要主动执行 forEach会帮助他执行
+//x是item，内容的值  y是index，当前下标  z是数组的内容
+```
+
+```javascript
+//map与forEach差不多
+var a = [4,5,6];
+a.map(function(x,y,z){...});
+//x是item，内容的值  y是index，当前下标  z是数组的内容
+//但是map可以返回值，返回值返回一个数组，forEach返回undefined
+```
+
+```javascript
+//filter 
+var a = [4,5,6];
+var b = a.filter(function(x,y,z){return x>4});
+console.log(b);//[5,6]
+//x是item，内容的值  y是index，当前下标  z是数组的内容
+//return 可以判断满不满足条件 满足就留下来
+```
+

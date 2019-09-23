@@ -23,6 +23,8 @@ oCan.bezierCurveTo(x1,y1,x2,y2,x3,y3);//控制点1的坐标  控制点2的坐标
 ctx.arcTo(x1,y1,x2,y2,r);//创建弧 起始点坐标 终点坐标 弧半径
 ```
 
+![弧/曲线](https://www.w3school.com.cn/i/arc.gif)
+
 ```html
 <body>
     <canvas></canvas>
@@ -58,7 +60,7 @@ ctx.arcTo(x1,y1,x2,y2,r);//创建弧 起始点坐标 终点坐标 弧半径
     //绘制圆形
     cxt.translate(0,0);//参考点设置
     cxt.arc(x,y,r,x1,y1,bool);//x,y圆心坐标 r圆半径 x1起点弧度值 y1终点弧度值 bool顺时针还是逆时针 false顺时针
-    
+
     cxt.rotate(rad);//rad弧度值  旋转图形  旋转中心点为左上角
    
     cxt.scale(1,1);//等比例缩放  分别对应宽高

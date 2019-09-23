@@ -53,3 +53,19 @@ git commit -m "" // 引号里面是提交的描述
 
 ``git reset --hard "id值"``id值在git reflog里面可以看见或者返回前一次``git reset --hard HEAD^``  如果是前前次``git reset --hard HEAD^^`` 
 
+![git操作通用流程](https://user-gold-cdn.xitu.io/2018/4/25/162fcc0987bf1c0a?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+
+##### 一次完整的提交
+
+```
+/*
+	第零步：在git里面创建这个仓库
+	第一步：创建本地库。新建一个文件，mkdir 文件名  然后cd 文件夹，输入一个git init；或者直接在一个已存在的文件夹里面直接git init 。通过git init 文件夹里面会产生一个.git的文件夹，不要动里面，默认是看不到的。
+这是创建了一个本地仓库。
+	第二步：将本地的工作区里面的文件提交到暂存库里面去。通过命令git add 文件名（提交单个文件）/git add .（提交所有的文件）
+	第三步：将暂存库里面的东西提交到本地库。git commit -u "提交说明"
+	第四步：建立本地库与远程库直接的联系 git remote add origin git@github.com:用户名/仓库名.git(例如Notes之间的关系 git remote add origin git@github.com:Login-err/Notes.git)
+	第四步：把本地库里面的内容提交到远程库。git push origin master -f
+*/
+```
+

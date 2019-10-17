@@ -21,3 +21,7 @@
 <meta name="referrer" content="no-referrer" />
 ```
 
+```
+vue init webpack '项目名'
+```
+

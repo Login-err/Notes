@@ -69,3 +69,8 @@ git commit -m "" // 引号里面是提交的描述
 */
 ```
 
+```
+// 查看仓库信息
+git remote show origin
+```
+
